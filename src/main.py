@@ -3,7 +3,7 @@ import sys
 
 
 from const import *
-
+from game import Game
 
 class Main:
 
@@ -11,10 +11,14 @@ class Main:
         pygame.init()
         self.screen = pygame.display.set_mode((WIDTH, HEIGTH))
         pygame.display.set_caption('Copy Chess')
+        self.game = Game()
 
 
     def mainLoop(self):
+        
         while True:
+            self.game.show_bg(self.screen)
+
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit(1)
