@@ -12,7 +12,7 @@ Copy Chess is a chess engine and game interface inspired by the tutorial in [thi
 Open a terminal in **GitHub Codespaces** and run:
 ```sh
 git clone https://github.com/YOUR_USERNAME/CopyChess.git
-cd CopyChess
+cd Chess
 ```
 
 ### 2. Install Dependencies
